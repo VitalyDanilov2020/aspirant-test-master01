@@ -1,6 +1,6 @@
 ## Steps to work with project ##
-1. git clone https://github.com/VitalyDanilov2020/aspirant-test.git
-2. cd aspirant-test
+1. git clone https://github.com/VitalyDanilov2020/aspirant-test-master01.git
+2. cd aspirant-test-master01
 3. composer install
 4. docker-compose up --build -d
 5. docker exec -ti aspirant-test-master01_app_1  sh -c "php bin/console orm:schema-tool:create"

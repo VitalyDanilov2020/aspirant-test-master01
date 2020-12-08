@@ -74,10 +74,11 @@ class FetchDataCommand extends Command
     }
 
     /**
-     * @param InputInterface  $input
+     * @param InputInterface $input
      * @param OutputInterface $output
      *
      * @return int
+     * @throws \Exception
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
@@ -130,7 +131,7 @@ class FetchDataCommand extends Command
                 ->setDescription((string) $item->description)
                 ->setLink((string) $item->link)
                 ->setPubDate($this->parseDate((string) $item->pubDate));
-                $this->doctrine->persist($trailer);
+            $this->doctrine->persist($trailer);
         }
 
         $this->doctrine->flush();

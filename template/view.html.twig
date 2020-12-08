@@ -1,0 +1,19 @@
+{% extends 'main.html.twig' %}
+
+{% block title %}Detail view{% endblock %}
+
+{% block content %}
+    <h1 style="margin: 20px">{{ trailer.title }}</h1>
+    <div style="margin: 20px">
+        <img src="{{ trailer.link }}/images/poster.jpg">
+    </div>
+    <div style="margin: 20px">
+        <p>{{ trailer.description }}</p>
+    </div>
+    <div style="margin: 20px">
+        <a style="margin: 20px" href="{{ trailer.link }}">Link to source</a>
+    </div>
+    <div style="margin: 20px">
+        <a style="margin: 20px" href="/">return to list</a>
+    </div>
+{% endblock %}

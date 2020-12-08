@@ -1,4 +1,4 @@
-idea
+.idea
 vendor
 .phpstorm.meta.php
 config/app.*.yaml

@@ -39,6 +39,9 @@ class HomeController
 
     /**
      * HomeController constructor.
+     * @param RouteCollectorInterface $routeCollector
+     * @param Environment $twig
+     * @param EntityManagerInterface $em
      */
     public function __construct(RouteCollectorInterface $routeCollector, Environment $twig, EntityManagerInterface $em)
     {
@@ -73,6 +76,9 @@ class HomeController
     }
 
     /**
+     * @param ServerRequestInterface $request
+     * @param ResponseInterface $response
+     * @param array $id
      * @return ResponseInterface
      *
      * @throws LoaderError
